@@ -5,6 +5,7 @@ import {FiBell , FiPlus} from 'react-icons/fi'
 import { NavLink } from 'react-router-dom'
 import './Navbar.scss'
 
+
 const Navbar = () => {
   return (
     <nav className='navbar'>
