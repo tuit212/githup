@@ -1,0 +1,51 @@
+@import '../../Assets/general.scss';
+
+.mainLeftContainer{
+    width: 340px;
+    background-color: var(--color-bg-n);
+    // height: 560px;
+    overflow: hidden;
+    border-right: 1px solid var(--color-text-opacity);
+
+    .mainLeft {
+        max-width: 260px;
+        width: 100%;
+        margin: 30px auto;
+        @include center(flex , center , none);
+        flex-direction: column;
+        overflow-y: scroll;
+        scrollbar-color: transparent;
+        height: 100%;
+        padding: 1px;
+        
+        .line{
+            padding: 1px;
+            width: 100%;
+            background-color: var(--color-text-opacity);
+        }
+
+        .mainLeftName {
+            @include center (flex , center , flex-start);
+            gap: 4px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        img{
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
+
+// scrolbar
+.mainLeft::-webkit-scrollbar{
+    display: none;
+}
+
+.mainLeft{
+    -ms-overflow-style: none;
+    stroke-width: none;
+}
