@@ -1,6 +1,7 @@
 import React from 'react'
 import Left from '../../Pages/Main/Left'
 import Right from '../../Pages/Main/Right'
+import './main.scss'
 
 const Main = () => {
   return (

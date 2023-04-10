@@ -1,0 +1,6 @@
+@import '../../Assets/general.scss';
+
+.main-section{
+    @include center (flex , none , none);
+    background-color: var(--color-bg);
+}
